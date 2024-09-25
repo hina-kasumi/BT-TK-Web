@@ -1,0 +1,18 @@
+:root{
+    --text-color: #758caf;
+}
+body {
+    color: white;
+    background-color: #5a5546;
+}
+h1, h2 {
+    color: var(--text-color);
+}
+
+header b strong {
+    color: #cec074;
+}
+
+section ol li strong {
+    color: red;
+}
