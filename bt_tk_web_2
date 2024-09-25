@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li:hover {
+            background-color: darkblue;
+        }
+
+        header {
+            background-color: #40469e;
+            height: 20%;
+            color: red;
+        }
+
+        div {
+            display: flex;
+            height: 60%;
+        }
+
+        aside {
+            background-color: #cd301d;
+            flex: 1;
+        }
+
+        a {
+            text-decoration: none;
+            color: #d79b2a;
+            font-size: 20px;
+        }
+
+        ul li {
+            padding: 10px;
+        }
+
+        section {
+            background-color: #b6d0f2;
+            flex: 3;
+        }
+
+        article {
+            background-color: #533116;
+            flex: 1;
+            color: lightblue;
+        }
+
+        footer {
+            background-color: #71a374;
+            height: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        header
+    </header>
+    <div>
+        <aside>
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./">Product</a></li>
+                <li><a href="./">Download</a></li>
+                <li><a href="./">Contact</a></li>
+                <li><a href="./">Other</a></li>
+            </ul>
+        </aside>
+
+        <section>
+            main
+        </section>
+
+        <article>
+            right
+        </article>
+    </div>
+
+
+    <footer>
+        footer
+    </footer>
+</body>
+
+</html>
