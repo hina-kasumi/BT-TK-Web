@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- https://hocwebchuan.com/exercises/css-css3/css_basic07.php -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        body {
+            background-color: #f8f8f8;
+            color: #1c1b1b;
+            font-family: Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #555;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s color;
+        }
+
+        .portfolio {
+            margin: 30px auto;
+            width: 1130px;
+        }
+
+        .portfolio h2 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .portfolio h2::after {
+            background-color: #339999;
+            content: "";
+            display: block;
+            height: 3px;
+            width: 75px;
+            margin: 11px auto 30px;
+        }
+
+        .portfolio .list-tab {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .portfolio .list-tab li {
+            display: inline-block;
+            font-size: 17px;
+            margin-right: 20px;
+        }
+
+        .portfolio .list-tab li.active a {
+            color: #359a9a;
+        }
+
+        .portfolio .list-tab li a:hover {
+            color: #359a9a;
+        }
+
+        .portfolio .galerry {
+            background-color: #fff;
+            padding: 10px;
+            padding-bottom: 6px;
+        }
+
+        .portfolio .galerry li {
+            float: left;
+            margin-right: 30px;
+            margin-bottom: 22px;
+            width: 350px;
+        }
+
+        .portfolio .galerry li:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        .portfolio .galerry li:nth-last-of-type(-n+3) {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="portfolio">
+        <h2>MY PORTFOLIO</h2>
+        <ul class="list-tab">
+            <li class="active"><a href="./">All</a></li>
+            <li><a href="./">Web App</a></li>
+            <li><a href="./">UI/UX</a></li>
+            <li><a href="./">graphics Design</a></li>
+            <li><a href="./">Mobile App</a></li>
+            <li><a href="./">Branding</a></li>
+            <li><a href="./">Marketing</a></li>
+        </ul>
+        <ul class="galerry clearfix">
+            <li><a href="./"><img src="image.png" alt=""></a></li>
+            <li><a href="./"><img src="image.png" alt=""></a></li>
+            <li><a href="./"><img src="image.png" alt=""></a></li>
+            <li><a href="./"><img src="image.png" alt=""></a></li>
+            <li><a href="./"><img src="image.png" alt=""></a></li>
+            <li><a href="./"><img src="image.png" alt=""></a></li>
+            <li><a href="./"><img src="image.png" alt=""></a></li>
+            <li><a href="./"><img src="image.png" alt=""></a></li>
+            <li><a href="./"><img src="image.png" alt=""></a></li>
+        </ul>
+    </section>
+</body>
+
+</html>

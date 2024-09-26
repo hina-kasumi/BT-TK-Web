@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #7f7f7f;
+    text-decoration: none;
+    transition: 0.3s color;
+}
+
+a:hover {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    color: #333;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+/* layout */
+
+footer {
+    margin: 30px auto;
+    position: relative;
+    width: 1140px;
+}
+
+footer div {
+    float: left;
+}
+
+h4 {
+    margin-bottom: 27px;
+}
+
+footer .air {
+    max-width: 490px;
+    width: 42.98%;
+}
+
+footer .links {
+    max-width: 195px;
+    width: 17.10%;
+}
+
+footer .categories {
+    max-width: 195px;
+    width: 17.10%;
+}
+
+footer .contact {
+    max-width: 260px;
+    width: 22.82%;
+}
+
+footer .contact address {
+    font-style: normal;
+}

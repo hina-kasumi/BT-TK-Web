@@ -1,0 +1,86 @@
+<html lang="en">
+    <!-- https://hocwebchuan.com/exercises/css-css3/css_basic06.php -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        body {
+            color: #383838;
+            font-family: Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .examples {
+            margin: 30px auto;
+            width: 940px;
+        }
+
+        .examples h2 {
+            font-size: 26px;
+            margin-bottom: 30px;
+            position: relative;
+            text-align: center;
+        }
+
+        .examples h2 span {
+            background-color: #fff;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .examples h2:after {
+            background-color: #e1e0e0;
+            content: "";
+            display: block;
+            height: 1px;
+            left: 0;
+            position: absolute;
+            top: 20px;
+            width: 100%;
+        }
+
+        .example-list {}
+
+        .example-list ul {}
+
+        .example-list li {
+            float: left;
+            margin-right: 26px;
+            width: 215px;
+        }
+
+        .examples .example-list li:nth-child(4n) {
+            margin-right: 0;
+        }
+
+        .example-list a {}
+    </style>
+</head>
+
+<body>
+    <section class="examples">
+        <h2><span>Great examples built with bootslander</span></h2>
+        <ul class="example-list">
+            <li><a href="./"><img src="res/image.png" alt=""></a></li>
+            <li><a href="./"><img src="res/image.png" alt=""></a></li>
+            <li><a href="./"><img src="res/image.png" alt=""></a></li>
+            <li><a href="./"><img src="res/image.png" alt=""></a></li>
+        </ul>
+    </section>
+</body>
+
+</html>

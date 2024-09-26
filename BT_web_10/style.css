@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    color: #333;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* layout */
+
+.analytic {
+    background: url(res/bg.png) no-repeat repeat left top;
+    margin: 30px auto;
+    padding: 38px 0;
+    width: 1180px;
+}
+
+.analytic ul {
+    text-align: center;
+}
+
+.analytic ul li {
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+}
+
+.analytic p {
+    width: 100%;
+}
+
+.icon {
+    margin-bottom: 14px;
+}
+
+.icon span {
+    font-size: 45px;
+}
+
+.analytic ul li .number {
+    font-size: 43px;
+    margin-bottom: 7px;
+}
