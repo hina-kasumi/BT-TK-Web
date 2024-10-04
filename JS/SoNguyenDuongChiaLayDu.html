@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" onchange="soNguyenDuong(this.value)">
+
+    <script>
+        function soNguyenDuong(value) {
+
+            value = Number.parseInt(value);
+            alert(value > 0 && value % 1 == 0);
+        };
+    </script>
+</body>
+
+</html>

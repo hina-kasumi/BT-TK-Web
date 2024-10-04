@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="res" id="1"></div>
+    <div class="res" id="2"></div>
+    <div class="res" id="3"></div>
+
+    <script>
+        "use strict";
+        // dùng vòng lặp for
+        function sumArray(array) {
+            let sum = 0;
+            for (let i = 0; i < array.length; i++) {
+                sum += array[i];
+            }
+            return sum;
+        }
+
+        // dùng vòng lặp for each
+        function sumArrayForEach(array) {
+            let sum = 0;
+            array.forEacch(function (item) {
+                sum += item;
+            });
+            return sum;
+        }
+
+        // dùng hàm reduce
+        function sumArrayReduce(array) {
+            return array.reduce(function (a, b) {
+                return a + b;
+            });
+        }
+
+        // dùng map
+        function sumArrayMap(array) {
+            let sum = 0;
+            array.map(function (item) {
+                sum += item;
+            });
+            return sum;
+        }
+
+        let array = [1, 2, 3, 4, 5];
+        document.getElementById('1').innerHTML = sumArray(array);
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" onchange="KiemTraSo(this.value)">
+
+    <script>
+        function soNguyenDuong (value) {
+            return (value > 0 && Number.isInteger(value)); 
+        };
+        function soNguyenAm (value) {
+            return (value < 0 && Number.isInteger(value)); 
+        };
+
+        function KiemTraSo (value){
+            value = Number.parseInt(value);
+            if (soNguyenAm(value))
+                alert ('lây là số nguyên âm');
+            else if(soNguyenDuong(value))
+                alert ('đây là số nguyên dương');
+            else
+                alert ("đây không phải số nguyên");
+        }
+    </script>
+</body>
+</html>

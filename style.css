@@ -1,0 +1,25 @@
+#main {
+    display: flex;
+    justify-content: start;
+}
+
+.block {
+    height: 50px;
+    /* width: 50px; */
+    padding: 10px;
+    background-color: bisque;
+    margin: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block:hover {
+    background-color: #f0f0f0;
+}
+
+.block a {
+    text-decoration: none;
+    color: gray
+}

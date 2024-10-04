@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" placeholder="value" class="sum">
+        +
+        <input type="text" placeholder="value" class="sum">
+        <button onclick="resSum()" style="padding: 20px;"></button>
+        <p id="res"></p>
+    </div>
+    <script>
+        function sum (){
+            let values = document.getElementsByClassName("sum");
+            console.log(Number.parseFloat(values[0].value), Number.parseFloat(values[1].value));
+            
+            return Number.parseFloat(values[0].value) + Number.parseFloat(values[1].value);
+        }
+
+        function resSum (){
+            document.getElementById("res").innerHTML = 'tổng 2 số bạn vừa nhập là: ' + sum();
+        }
+    </script>
+</body>
+</html>

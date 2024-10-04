@@ -1,0 +1,37 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+table {
+    /* width: 50vw;
+    height: 50vh; */
+    border: 1px solid black;
+}
+
+th {
+    padding: 0px 1em;
+}
+
+td {
+    padding: 0px 5px;
+}
+
+th, td {
+    /* padding: 10px; */
+    border: 1px solid black;
+}
+
+tr:last-of-type td:only-child{
+    text-align: right;
+}
