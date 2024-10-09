@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #e2d7aa;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 1em;
+    padding: 0.5em;
+}
+
+a {
+    color: black;
+}
+
+.home {
+    color: #183850;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 100;
+}
+
+.img-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+article {
+    flex: 1;
+    text-align: center;
+}
+
+main img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+article p:first-of-type::first-letter {
+    font-family: EucrosiaUPC, sans-serif;
+    font-size: 40px;
+}
+
+article p {
+    text-align: justify;
+}
+
+h3>a {
+    color: blue;
+}
+
+span a {
+    background-image: url(images/bg2.jpg);
+    color: #ffffff;
+    Padding: 10px;
+    Margin-top: 10px;
+}
+
+article p:last-of-type span:first-of-type a::before {
+    content: url("images/comment.png");
+    position: relative;
+    right: 5px;
+    top: 7px;
+    padding: 10px;
+}
+
+footer {
+    margin-top: 2em;
+}
+
+article p:last-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+}
