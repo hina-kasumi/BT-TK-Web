@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            border-style: solid;
+        }
+        #header img{
+            width: 150px;
+            height: 100px;
+        }
+
+        #header ul{
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            
+        }
+
+        #header li {
+            display: inline-block;
+            border-style: solid;
+            border-color: rgb(103, 100, 148);
+            padding: 2px;
+                      
+        }
+
+        #header a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #menu {
+            width: 300px;
+            background-color: white;
+            color: black;
+            border-style:solid;
+            float: left;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            
+        }
+
+        #menu th {
+            background-color: black;
+            color: white;
+            padding: 5px;
+            width: 300px;
+        }
+
+        #menu ul {
+            list-style-type:disc;
+            text-align: left;
+            padding-left: 20px;
+            width: 300px;
+        }
+
+        #menu li{
+            font-weight: bold;
+        }
+
+        #menu li:hover {
+            border-bottom: 1px solid #e8e8e8;
+            color:crimson;
+        }
+
+        #content {
+            overflow-x: scroll;
+        }
+
+        .submenu {
+            left: 310px;
+            display: none;
+            margin: 0;
+            border-style: solid;
+            background-color: white;
+            
+        }
+        #menu li:hover .submenu {
+            position: absolute;
+            display: block;
+            color:black
+        }
+
+        #content {
+            border-style: solid;
+            
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #content img {
+            border-style: solid;
+            width: 150px;
+            height: 100px;
+            margin: 0 auto;
+        }
+
+        #content img:hover {
+            width: 200px;
+            height: 150px;
+        }
+
+        #content th {
+            width: 150px;
+        }
+
+        #content table {
+            width: 900px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header id="header">
+        <img src="KPM.png" alt=""> <br>
+        <ul>
+            <li><a href="#">TRANG CHU</a></li>
+            <li><a href="#">GIOI THIEU</a></li>
+            <li><a href="#">SAN PHAM</a></li>
+            <li><a href="#">DICH VU</a></li>
+            <li><a href="#">Y TUONG</a></li>
+            <li><a href="#">TIN TUC</a></li>
+            <li><a href="#">LIEN HE</a></li>
+        </ul>
+    </header>
+
+    <menu id="menu">
+        <table>
+            <tr>
+                <th>DANH MUC SAN PHAM</th>
+            </tr>
+        </table>
+        <ul>
+            <li>May phu kien may ep cam vien</li>
+            <li>May va phu kien may ep vien go</li>
+            <li>May va phu kien may ep vien phan bon
+                <ul class="submenu">
+                    <li>May ep vien phan bon</li>
+                    <li>Khuon ep vien phan bon</li>
+                </ul>
+            </li>
+            <li>May phu kien</li>
+            <li>May phu kien</li>
+            <li>May phu kien</li>
+            <li>May phu kien</li>
+            <li>May phu kien</li>
+            <li>May phu kien</li>
+            <li>May phu kien</li>
+            <li>May phu kien</li>
+        </ul>
+    </menu>
+    <content id="content">
+        <table>
+            <tr>
+                <th><img src="KPM.png"></th>
+                <th><img src="KPM.png"></th>
+                <th><img src="KPM.png"></th>
+                <th><img src="KPM.png"></th>
+            </tr>
+            <tr>
+                <th>WASER CPM 7726</th>
+                <th>BUHLER DPHD-95136</th>
+                <th>BUHLER DPHD-95154-610</th>
+                <th>BUHLER DPHD-95134</th>
+            </tr>
+            <tr>
+                <th>Gia: Lien he</th>
+                <th>Gia: Lien he</th>
+                <th>Gia: Lien he</th>
+                <th>Gia: Lien he</th>
+            </tr>
+            <tr>
+                <th>Xem chi tiet</th>
+                <th>Xem chi tiet</th>
+                <th>Xem chi tiet</th>
+                <th>Xem chi tiet</th>
+            </tr>
+            <tr>
+                <th><img src="KPM.png"></th>
+                <th><img src="KPM.png"></th>
+                <th><img src="KPM.png"></th>
+                <th><img src="KPM.png"></th>
+            </tr>
+            <tr>
+                <th>WASER CPM 7726</th>
+                <th>BUHLER DPHD-95136</th>
+                <th>BUHLER DPHD-95154-610</th>
+                <th>BUHLER DPHD-95134</th>
+            </tr>
+            <tr>
+                <th>Gia: Lien he</th>
+                <th>Gia: Lien he</th>
+                <th>Gia: Lien he</th>
+                <th>Gia: Lien he</th>
+            </tr>
+            <tr>
+                <th>Xem chi tiet</th>
+                <th>Xem chi tiet</th>
+                <th>Xem chi tiet</th>
+                <th>Xem chi tiet</th>
+            </tr>
+            <tr>
+                <th><img src="KPM.png"></th>
+                <th><img src="KPM.png"></th>
+                <th><img src="KPM.png"></th>
+                <th><img src="KPM.png"></th>
+            </tr>
+            <tr>
+                <th>WASER CPM 7726</th>
+                <th>BUHLER DPHD-95136</th>
+                <th>BUHLER DPHD-95154-610</th>
+                <th>BUHLER DPHD-95134</th>
+            </tr>
+            <tr>
+                <th>Gia: Lien he</th>
+                <th>Gia: Lien he</th>
+                <th>Gia: Lien he</th>
+                <th>Gia: Lien he</th>
+            </tr>
+            <tr>
+                <th>Xem chi tiet</th>
+                <th>Xem chi tiet</th>
+                <th>Xem chi tiet</th>
+                <th>Xem chi tiet</th>
+            </tr>
+            <tr>
+                <th><img src="KPM.png"></th>
+                <th><img src="KPM.png"></th>
+                <th><img src="KPM.png"></th>
+                <th><img src="KPM.png"></th>
+            </tr>
+            <tr>
+                <th>WASER CPM 7726</th>
+                <th>BUHLER DPHD-95136</th>
+                <th>BUHLER DPHD-95154-610</th>
+                <th>BUHLER DPHD-95134</th>
+            </tr>
+            <tr>
+                <th>Gia: Lien he</th>
+                <th>Gia: Lien he</th>
+                <th>Gia: Lien he</th>
+                <th>Gia: Lien he</th>
+            </tr>
+            <tr>
+                <th>Xem chi tiet</th>
+                <th>Xem chi tiet</th>
+                <th>Xem chi tiet</th>
+                <th>Xem chi tiet</th>
+            </tr>
+            <tr>
+                <th><img src="KPM.png"></th>
+                <th><img src="KPM.png"></th>
+                <th><img src="KPM.png"></th>
+                <th><img src="KPM.png"></th>
+            </tr>
+            <tr>
+                <th>WASER CPM 7726</th>
+                <th>BUHLER DPHD-95136</th>
+                <th>BUHLER DPHD-95154-610</th>
+                <th>BUHLER DPHD-95134</th>
+            </tr>
+            <tr>
+                <th>Gia: Lien he</th>
+                <th>Gia: Lien he</th>
+                <th>Gia: Lien he</th>
+                <th>Gia: Lien he</th>
+            </tr>
+            <tr>
+                <th>Xem chi tiet</th>
+                <th>Xem chi tiet</th>
+                <th>Xem chi tiet</th>
+                <th>Xem chi tiet</th>
+            </tr>
+            <tr>
+                <th><img src="KPM.png"></th>
+                <th><img src="KPM.png"></th>
+                <th><img src="KPM.png"></th>
+                <th><img src="KPM.png"></th>
+            </tr>
+            <tr>
+                <th>WASER CPM 7726</th>
+                <th>BUHLER DPHD-95136</th>
+                <th>BUHLER DPHD-95154-610</th>
+                <th>BUHLER DPHD-95134</th>
+            </tr>
+            <tr>
+                <th>Gia: Lien he</th>
+                <th>Gia: Lien he</th>
+                <th>Gia: Lien he</th>
+                <th>Gia: Lien he</th>
+            </tr>
+            <tr>
+                <th>Xem chi tiet</th>
+                <th>Xem chi tiet</th>
+                <th>Xem chi tiet</th>
+                <th>Xem chi tiet</th>
+            </tr>
+            <tr>
+                <th><img src="KPM.png"></th>
+                <th><img src="KPM.png"></th>
+                <th><img src="KPM.png"></th>
+                <th><img src="KPM.png"></th>
+            </tr>
+            <tr>
+                <th>WASER CPM 7726</th>
+                <th>BUHLER DPHD-95136</th>
+                <th>BUHLER DPHD-95154-610</th>
+                <th>BUHLER DPHD-95134</th>
+            </tr>
+            <tr>
+                <th>Gia: Lien he</th>
+                <th>Gia: Lien he</th>
+                <th>Gia: Lien he</th>
+                <th>Gia: Lien he</th>
+            </tr>
+            <tr>
+                <th>Xem chi tiet</th>
+                <th>Xem chi tiet</th>
+                <th>Xem chi tiet</th>
+                <th>Xem chi tiet</th>
+            </tr>
+            
+        </table>
+    </content>
+</body>
+</html>
