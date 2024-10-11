@@ -46,7 +46,6 @@
 form.login input[id="password"],
 form.login input[id="account"] {
     border-color: rgba(0, 0, 0, 0.2);
-    color: whitesmoke;
 }
 
 form.login input[type="submit"] {

@@ -52,7 +52,6 @@ footer {
 
 form input[type = submit]{
     background-color: var(--theme-color);
-    color: white;
     padding: 0.9em;
     border-radius: 3em;
     border: none;
