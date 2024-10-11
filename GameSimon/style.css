@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: deepskyblue;
+    background-size: contain;
+}
+
+section {
+    background: deepskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input[type = "checkbox"]{
+    --size: 40px;
+    margin: 2px;
+    height: var(--size);
+    width: var(--size);
+}
