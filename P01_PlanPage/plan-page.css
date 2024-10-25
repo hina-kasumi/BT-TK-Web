@@ -13,18 +13,19 @@
 }
 
 body {
-    background: url("./images/plan-page.jpg") no-repeat;
+    background: url("./images/plan-page.jpg");
     color: white;
     font-family: Lato, sans-serif;
     font-weight: 100;
     color: gray;
+    display: flex;
+    justify-content: center;
 }
 
 section {
     text-align: center;
     width: 80%;
     height: 95vh;
-    margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -32,6 +33,7 @@ section {
 
 article {
     width: 25%;
+    min-width: 200px;
     background: #262626;
     border: 5px solid #333;
 }
@@ -60,4 +62,13 @@ button {
 
 button:hover {
     background-color: gray;
+}
+
+@media (max-width: 690px) {
+    section {
+        flex-wrap: wrap;
+    }
+    article {
+        width: 100%;
+    }
 }
